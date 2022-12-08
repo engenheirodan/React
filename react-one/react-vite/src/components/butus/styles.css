@@ -1,0 +1,14 @@
+.square-yn {
+	background-color: #fff0000;
+	padding: 30px;
+}
+.botao-yn {
+	background-color: #2383c5;
+	color:  #FFF;
+	border:  2px solid #000;
+	padding: 10px 20px;
+	border-radius: 20px;
+}
+.legend-yn {
+	color:  #00FF00;
+}

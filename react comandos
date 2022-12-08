@@ -1,0 +1,76 @@
+react comandos
+
+npm init vite react-vite --template react-ts
+vite: biblioteca que auxilia a criar o projeto mais rapido que o normal já vem o projeto configurado e sistema que monitora as modificações que você fez!!
+componentes em react: Conceitualmente, componentes são como funções JavaScript. Eles aceitam entradas arbitrárias (chamadas “props”) e retornam elementos React que descrevem o que deve aparecer na tela.
+varios componentes em react usando jsx basicamente é criar uma pasta chamada componentes ai depois começa adicionar os codigos de cada seção e depois incorporar dentro da arquivo app.tsx como se fosse uma tag html.
+*********************************************************************************************************************************
+Expressões em jsx 
+o JSX é uma forma de criar elementos para serem utilizadas como templates de aplicações React. 
+Basicamente, os elementos criados com o JSX são bem similares com código HTML
+
+const App = () => {
+  let n1: number = 10;
+
+return (
+  <div>Multiplicacao: {n1}</div>
+);
+}
+***************************************************************************************************************************
+Children é filho
+
+
+
+props(propriedade) em referencia a html são atributos do html.
+fragment quando vc quer retornar mais de um elemento dentro do mesmo componente.
+
+npm install ==> instalar o npm no seu projeto
+*********************************************************************************************************
+criando evento em react
+/*const handleButtonClick = () => {
+alert("O botao");
+
+};*/
+  <div>
+    
+     <button onClick={handleButtonClick}>clique aqui </button>
+    }
+    </div>
+*********************************************************************************************************
+CTRL + C ==> para finalizar o projeto rodando em maquina e simulando servidor.
+
+npm rum dev ==> se o projeto foi criado com vite
+
+npm start ==> foi criado sem vite
+*********************************************************************************************************
+usando o useState serve para trocar os valores mudaveis assim que for aplicado
+variaveis que vai usar para guardar alguma coisa em termos de dados 
+Descrevendo do codigo;
+import { useState } from 'react'; //importando o useState
+
+/cria uma função qualquer nesse caso voce passa dois valores o 1 é o da variavel atual e o segundo vai ser o valor que vai substituir a variavel atual/
+
+const App = () => {
+
+  const [name, setName] = useState("Danilo");
+
+  const handleClick = () => {
+    setName("ARAUJO");
+  };
+
+
+
+/ aplicando o state
+
+  <div>
+    o numero é: {name}.
+     <button onClick={handleClick}>clique aqui </button>
+    }
+    </div>
+
+********************************************************************************************************
+npm install -D @types/styled-components ==> Instalação da biblioteca de componentes do https://styled-components.com/docs.
+*********************************************************************************
+instalando o tailwindcss
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+npx tailwindcss init -p

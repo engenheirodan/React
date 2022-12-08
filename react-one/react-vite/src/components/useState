@@ -1,0 +1,70 @@
+utilizando o usestate
+*********************************aumentar e diminuir numero **************************************
+/*criando a função 
+
+const App = () => {
+/*primeiro a gente adiciona o valor inicial nesse caso == 0*/
+	const [n, setN] = useState(0);
+
+
+/*depois você adiciona a função de subtração*/
+
+const handleMinus = () => {
+	setN( n - 1);
+}
+/*depois adiciona a função de soma */
+const handleMore = () => {
+	setN( n + 1);
+
+}
+}
+
+return (
+  <div>
+     
+     <button onClick={handleMinus}> - </button>
+     <div>{n}</div>
+     <button onClick={handleMore}> + </button>
+    
+    </div>
+
+
+
+
+);
+}
+
+export default App;
+******************************fim gerar e diminuir numero***************************************
+************************************************************************************************
+*******************************adicionar nome **************************************************
+/*criando a função 
+
+const App = () => {
+/*primeiro a gente adiciona os parametros que serão utilizados oo nome e a tag que vai setar o name*/
+	const [name, setName] = useState('');//aqui deixamos claro que o campo input não tera nenhum valor adicionado.
+
+
+/*depois você adiciona a funcção com a tag do evento que vai fazer a troca*/
+
+const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+	setName( event.target.value );
+}
+
+
+return (
+  <div>
+     Nome:
+     <input type="text" value={name} onChange={handleInput} />
+     <hr />
+     Seu nome é: {name}   
+    </div>
+
+
+
+
+);
+}
+
+export default App;
+*******************************fim nome **************************************************
