@@ -1,6 +1,6 @@
 # Documentação REACT
 https://pt-br.reactjs.org/
-<<<<<<< HEAD
+<<<<<<< HEAD >>>>>>>>>>
 
 ola
 =======
