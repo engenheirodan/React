@@ -1,0 +1,23 @@
+//Crie uma pasta components
+//crie um arquivo Ex: Geo
+export const Square = () => {
+    return(
+        <div className="w-52 h-52 bg-orange-700 text-white">
+            Texto Alternativo
+        </div>
+    )
+}
+export const Circle = () => {
+    return(
+        <div className="w-52 h-52 bg-orange-700 text-white rounded-full">
+            Texto Alternativo
+        </div>
+    )
+}
+
+//Dentro de Page 
+import { Square, Circle} from './components/Geo';
+
+Depois aplicar como se fosse uma tag HTML
+<Square />
+<Circle />
