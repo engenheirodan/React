@@ -9,8 +9,6 @@ usar o nvm para installar as dependenciais
 npx create-next-app
 npm run dev
 ___________________________________________________________________________________________________________________________________________________________________________________
-comando para rodar projeto localmente
-npm run dev
 
 comando para criar react puro usando vite
 npm create vite
